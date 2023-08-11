@@ -80,7 +80,7 @@ async def mathflag(event):
     await eor(event, output)
 
 
-CmdHelp("calculator").add_command(
+CmdHelp("ᴄᴀʟᴄᴜʟᴀᴛᴏʀ").add_command(
     "calc", "Your expression", "Solves the given maths equation by BODMAS rule"
 ).add_command(
     "math", "<flag> <argument>", "Does a math problem for you.", "math sin 90"
