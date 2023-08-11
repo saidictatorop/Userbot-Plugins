@@ -199,7 +199,7 @@ async def uploadas(event):
         await hell.edit("**404:** __File Not Found__")
 
 
-CmdHelp("uploads").add_command(
+CmdHelp("ᴜᴘʟᴏᴀᴅs").add_command(
     "upload", "<path>", "Uploads a locally stored file to the chat"
 ).add_command(
     "uploadas stm", "<path>", "Uploads the locally stored video in streamable format."
