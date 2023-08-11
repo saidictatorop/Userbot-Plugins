@@ -104,7 +104,7 @@ async def hmm(event):
     await hell.edit(output, link_preview=False)
 
 
-CmdHelp("youtube").add_command(
+CmdHelp("ʏᴏᴜᴛᴜʙᴇ").add_command(
     "yta", "<yt link>", "Extracts the audio from given youtube link and uploads it to telegram"
 ).add_command(
     "ytv", "<yt link>", "Extracts the video from given youtube link and uploads it to telegram"
