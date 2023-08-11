@@ -33,8 +33,8 @@ except:
 
 
 def main():
-    print("T E A M    H E L L B O T   ! !")
-    print("Hello!! Welcome to HellBot Session Generator\n")
+    print("T E A M    R A D H A B O T   ! !")
+    print("Hello!! Welcome to RadhaBot Session Generator\n")
     print("Human Verification Required !!")
     while True:
         verify = int(randint(1, 50))
@@ -63,7 +63,7 @@ def main():
 
 
 def generate_hellbot_session():
-    print("!!! HELLBOT SESSION !!!")
+    print("!!! RADHABOT SESSION !!!")
     print("One session for all HellBot's Project.")
     api_id = int(input("\nEnter APP ID here: "))
     api_hash = input("\nEnter API_HASH here: ")
@@ -85,7 +85,7 @@ def generate_pyro_session():
         print("\nYour HellBot Session Is sent in your Telegram Saved Messages.")
         hellbot.send_message(
             "me",
-            f"#HELLBOT #PYROGRAM\n\n`{hellbot.export_session_string()}`",
+            f"#RADHABOT #PYROGRAM\n\n`{hellbot.export_session_string()}`",
         )
 
 
