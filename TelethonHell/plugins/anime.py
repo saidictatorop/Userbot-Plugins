@@ -169,7 +169,7 @@ async def quote(event):
     await hell.edit(f"`{q['quote']}`\n\n—  **{q['character']}** (From __{q['anime']}__)")  # dimag ka bhosda hogya bc yha pe (*﹏*;)
 
 
-CmdHelp("anime").add_command(
+CmdHelp("Aɴɪᴍᴇ").add_command(
     "anime", "<anime name>", "Searches for the given anime and sends the details.", "anime Darling in the franxx"
 ).add_command(
     "manga", "<manga name>", "Searches for the given manga and sends the details.", "manga Jujutsu kaisen"
