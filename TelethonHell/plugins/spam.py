@@ -176,7 +176,7 @@ async def spamend(event):
         await eod(event, "**Nothing is spamming !!**")
 
 
-CmdHelp("spam").add_command(
+CmdHelp("ꜱᴩᴀᴍ").add_command(
     "spam", "<number> <text>", "Sends the text 'X' number of times.", "spam 99 Hello"
 ).add_command(
     "mspam", "<reply to media> <number>", "Sends the replied media (gif/ video/ sticker/ pic) 'X' number of times", "mspam 100 <reply to media>"
