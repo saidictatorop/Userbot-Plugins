@@ -137,7 +137,7 @@ async def _(event):
         )
 
 
-CmdHelp("forcesub").add_command(
+CmdHelp("ꜰᴏʀᴄᴇꜱᴜʙ").add_command(
     "fsub", "<channel username/id>", "Activates Force Subscribe In The Chat"
 ).add_command(
     "rmfsub", None, "Removes the chat from Force Subscribe"
