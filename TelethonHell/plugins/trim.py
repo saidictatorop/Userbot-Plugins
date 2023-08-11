@@ -205,7 +205,7 @@ async def audio(event):
     os.remove(o)
 
 
-CmdHelp("trim").add_command(
+CmdHelp("ᴛʀɪᴍ").add_command(
     "vtrim", "<start time> <end time>", "Trimes replied video within given time stamps. To generate a screenshot given single time-stamp."
 ).add_command(
     "atrim", "<starttime> <endtime>", "Trimes replied media within given time stamps and gives audio file as output."
