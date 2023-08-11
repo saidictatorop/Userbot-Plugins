@@ -10,11 +10,11 @@ from TelethonHell.version import __telever__
 
 # Creates the logger group on first deploy and adds the helper bot
 async def logger_id(client):
-    desc = "A Bot Logger Group For Hellbot. DO NOT LEAVE THIS GROUP!!"
+    desc = "A Bot Logger Group For Radhabot. DO NOT LEAVE THIS GROUP!!"
     try:
         grp = await client(
             functions.channels.CreateChannelRequest(
-                title="Hellbot Logger", about=desc, megagroup=True
+                title="RadhaUserbot Logger", about=desc, megagroup=True
             )
         )
         grp_id = grp.chats[0].id
@@ -83,14 +83,14 @@ async def start_msg(client, pic, version, total):
 <b><i>Sudo:</b></i> <code>{is_sudo}</code>
 <b><i>Library:</b></i> <code>Telethon - {__telever__}</code>
 
-<b><i>»» <u><a href='https://t.me/Its_HellBot'>†hê Hêllẞø†</a></u> ««</i></b>
+<b><i>»» <u><a href='https://t.me/RadhaX2Update'>sᴜᴘᴘᴏʀᴛ ✨</a></u> ««</i></b>
 """
     await client.send_file(
         Config.LOGGER_ID,
         pic,
         caption=text,
         parse_mode="HTML",
-        buttons=[[Button.url("HellBot Network", "https://t.me/HellBot_Networks")]],
+        buttons=[[Button.url("Uᴘᴅᴀᴛᴇs", "https://t.me/RadhaX2Update")]],
     )
 
 
