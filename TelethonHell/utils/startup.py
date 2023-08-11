@@ -78,10 +78,10 @@ async def start_msg(client, pic, version, total):
     text = f"""
 #START
 
-<b><i>Version:</b></i> <code>{version}</code>
-<b><i>Clients:</b></i> <code>{str(total)}</code>
-<b><i>Sudo:</b></i> <code>{is_sudo}</code>
-<b><i>Library:</b></i> <code>Telethon - {__telever__}</code>
+<b><i>ᴠᴇʀꜱɪᴏɴ:</b></i> <code>{version}</code>
+<b><i>ᴄʟɪᴇɴᴛꜱ:</b></i> <code>{str(total)}</code>
+<b><i>ꜱᴜᴅᴏ:</b></i> <code>{is_sudo}</code>
+<b><i>ʟɪʙʀᴀʀy:</b></i> <code>Telethon - {__telever__}</code>
 
 <b><i>»» <u><a href='https://t.me/RadhaX2Update'>sᴜᴘᴘᴏʀᴛ ✨</a></u> ««</i></b>
 """
@@ -98,10 +98,10 @@ async def start_msg(client, pic, version, total):
 async def join_it(client):
     if client:
         try:
-            await client(functions.channels.JoinChannelRequest("@Its_HellBot"))
+            await client(functions.channels.JoinChannelRequest("@RadhaX2Support"))
             await client(functions.messages.ImportChatInviteRequest("itu7bWHnA2djNjY1"))
         except BaseException:
             pass
 
 
-# hellbot
+# radhabot
