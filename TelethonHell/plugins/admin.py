@@ -595,7 +595,7 @@ async def _(event):
         )
 
 
-CmdHelp("admin").add_command(
+CmdHelp("Aᴅᴍɪɴ").add_command(
     "setgpic", "<reply to image>", "Changes the groups display picture"
 ).add_command(
     "promote", "<username/reply> <custom rank (optional)>", "Provides admins right to a person in the chat."
