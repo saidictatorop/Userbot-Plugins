@@ -217,11 +217,11 @@ if Config.BOT_USERNAME and tbot:
                 text="""**Hey! This is [ʀᴀᴅʜᴀ ᴜꜱᴇʀʙᴏᴛ](https://t.me/RadhaX2Update) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        Button.url("• Uᴘᴅᴀᴛᴇs •", "https://t.me/Its_HellBot"),
-                        Button.url("• Cʜᴀᴛ •", "https://t.me/hellbot_chats"),
+                        Button.url("• Uᴘᴅᴀᴛᴇs •", "https://t.me/RadhaX2Update"),
+                        Button.url("• Cʜᴀᴛ •", "https://t.me/RadhaX2Support"),
                     ],
                     [
-                        Button.url("• Rᴇᴘᴏ •", "https://t.me/RadhaX2Support"),
+                        Button.url("• Rᴇᴘᴏ •", "https://github.com/Radhak8/RadhaXUserbot"),
                         Button.url("• Sᴜᴘᴘᴏʀᴛ •", "https://t.me/RadhaX2Support"),
                     ],
                     [
