@@ -184,7 +184,7 @@ async def _(event):
     await hell.delete()
 
 
-CmdHelp("climate").add_command(
+CmdHelp("ᴄʟɪᴍᴀᴛᴇ").add_command(
     "climate", "Name of state/country", "Gets the weather of a city. By default it is Delhi, change it by setcity"
 ).add_command(
     "setcity", "<city>/<country>", "Sets your default city."
