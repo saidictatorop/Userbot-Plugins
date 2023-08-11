@@ -90,7 +90,7 @@ async def _(event):
                 await event.client.send_message(int(chat), event.message)
 
 
-CmdHelp("autopost").add_command(
+CmdHelp("ᴀᴜᴛᴏᴘᴏsᴛ").add_command(
     "autopost", "<channel id>", "Auto Posts every new post from targeted channel to your channel.", "autopost <channelid> [in your channel]"
 ).add_command(
     "rmautopost", "<channel id>", "Stops AutoPost from targeted autoposting channel."
