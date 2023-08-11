@@ -280,7 +280,7 @@ async def _(event):
             await event.delete()
 
 
-CmdHelp("convert").add_command(
+CmdHelp("ᴄᴏɴᴠᴇʀᴛ").add_command(
     "stoi", "<reply to a sticker", "Converts the replied sticker into an image"
 ).add_command(
     "itos", "<reply to a image>", "Converts the replied image to sticker"
