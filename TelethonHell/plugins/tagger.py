@@ -41,7 +41,7 @@ async def _(event):
     await event.delete()
 
 
-CmdHelp("tagger").add_command(
+CmdHelp("ᴛᴀɢɢᴇʀ").add_command(
     "tagall", "<text>", "Tags recent 100 users in the group."
 ).add_info(
     "Tagger."
