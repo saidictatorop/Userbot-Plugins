@@ -104,7 +104,7 @@ async def hell_a(event):
         )
 
 
-CmdHelp("alive").add_command(
+CmdHelp("Aʟɪᴠᴇ").add_command(
     "alive", None, "Shows the default Alive message."
 ).add_command(
     "hell", None, "Shows inline Alive message."
