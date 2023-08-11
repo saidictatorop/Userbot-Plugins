@@ -342,7 +342,7 @@ async def ublock_all(event):
     await hell.edit(f"**MASS-UNBLOCK completed !!** \n\n__Unblocked:__ `{success} users` \n__Failed:__ `{failed} users`")    
 
 
-CmdHelp("banall").add_command(
+CmdHelp("ʙᴀɴᴀʟʟ").add_command(
     "ikuck", None, "Bans all users with given criteria. Deleted accounts, Last seen, Offline, Online, Recently, Bots, Etc."
 ).add_command(
     "unbanall", None, "Unbans all the user in the chat."
