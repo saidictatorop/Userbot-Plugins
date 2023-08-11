@@ -142,7 +142,7 @@ async def _(event):
         await parse_error(event, f"**{username}:** `{r.text}`", False)
 
 
-CmdHelp("github").add_command(
+CmdHelp("ɢɪᴛʜᴜʙ").add_command(
     "commit", "<reply to a file> <path>|<branch>", "Uploads the file on github repo as provided in Heroku Config GIT_REPO_NAME. In short makes a commit to git repo from Userbot", "commit ./hellbot/plugins/example.py|master"
 ).add_command(
     "github", "<git username>", "Fetches the details of the given git username"
