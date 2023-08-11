@@ -114,7 +114,7 @@ async def promote(event):
     hellevent = await eor(event, "`Promoting User...`")
     user, rank = await get_user_from_event(event)
     if not rank:
-        rank = "ǟɖʍɨռ"
+        rank = "ᴀᴅᴍɪɴ"
     if not user:
         return
     try:
