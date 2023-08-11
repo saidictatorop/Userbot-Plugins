@@ -66,7 +66,7 @@ async def _(event):
         await parse_error(event, e)
 
 
-CmdHelp("antiflood").add_command(
+CmdHelp("ᴀɴᴛɪғʟᴏᴏᴅ").add_command(
     "setflood", "<number>", "Warns the user if he/she spams the chat and if you are an admin then it mutes him/her in the grp"
 ).add_info(
     "Anti Spammer"
