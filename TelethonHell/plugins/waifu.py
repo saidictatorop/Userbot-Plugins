@@ -120,7 +120,7 @@ async def _(event):
         )
 
 
-CmdHelp("waifu").add_command(
+CmdHelp("ᴡᴀɪғᴜ").add_command(
     "nekos", "<category>", "Searches and sends some SFW & NSFW neko images/gifs according to category mentioned or sends a random NSFW/SFW image/gif."
 ).add_command(
     "nsfw", "<category> <limit>", "Sends NSFW pictures and GIFs. Category and Limit are optional."
