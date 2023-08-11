@@ -55,7 +55,7 @@ async def _(event):
     await parse_error(hell, f"**🚀 Invited** `{i}` **users to Voice Chat.**")
 
 
-CmdHelp("voice_chat").add_command(
+CmdHelp("ᴠᴏɪᴄᴇ_ᴄʜᴀᴛ").add_command(
     "startvc", None, "Starts the voice chat in current group."
 ).add_command(
     "endvc", None, "Ends the voice chat in current group."
