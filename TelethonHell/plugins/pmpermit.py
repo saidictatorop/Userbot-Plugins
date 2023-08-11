@@ -276,7 +276,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                 return
             ForGo10God, _, hell_mention = await client_id(event)
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 Rᴀᴅʜᴀ Usᴇʀʙᴏᴛ Pᴍ Sᴇᴄᴜʀɪᴛʏ 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
             if event.sender_id == ForGo10God:
@@ -393,7 +393,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                 return
             ForGo10God, _, hell_mention = await client_id(event)
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 Rᴀᴅʜᴀ Usᴇʀʙᴏᴛ Pᴍ Sᴇᴄᴜʀɪᴛʏ 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
             if event.sender_id == ForGo10God:
@@ -510,7 +510,8 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                 return
             ForGo10God, _, hell_mention = await client_id(event)
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 Rᴀᴅʜᴀ Usᴇʀʙᴏᴛ Pᴍ Sᴇᴄᴜʀɪᴛʏvirtualenv venv
+source venv/bin/activate 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
             if event.sender_id == ForGo10God:
@@ -627,7 +628,7 @@ if str(Config.PM_PERMIT).lower() not in disabled_list:
                 return
             ForGo10God, _, hell_mention = await client_id(event)
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 Rᴀᴅʜᴀ Usᴇʀʙᴏᴛ Pᴍ Sᴇᴄᴜʀɪᴛʏ 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
             if event.sender_id == ForGo10God:
@@ -737,7 +738,7 @@ CmdHelp("pm_permit").add_command(
 ).add_command(
     "unblock", "<in pm>/<reply>", "Unblocks the mentioned user."
 ).add_command(
-    "listapproved", None, "Sends the list of all users approved by Hêllẞø†"
+    "listapproved", None, "Sends the list of all users approved by ʀᴀᴅʜᴀ ᴜꜱᴇʀʙᴏᴛ"
 ).add_info(
     "PM SECURITY"
 ).add_warning(
