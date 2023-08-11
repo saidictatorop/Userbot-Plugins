@@ -120,7 +120,7 @@ async def lsnote(event):
         await eor(event, OUT_STR)
 
 
-CmdHelp("snips").add_command(
+CmdHelp("ꜱɴɪᴩꜱ").add_command(
     "snip","<reply> <trigger>", "Saves the replied message as a note with given trigger."
 ).add_command(
     "rmsnip", "<trigger>", "Removes the snip from your database."
