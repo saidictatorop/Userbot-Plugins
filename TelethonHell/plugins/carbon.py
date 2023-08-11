@@ -117,7 +117,7 @@ async def kargb(event):
     await hell.delete()
 
 
-CmdHelp("carbon").add_command(
+CmdHelp("ᴄᴀʀʙᴏɴ").add_command(
     "carbon", "<your text>", "Carbonize your text. (Fixed style)"
 ).add_command(
     "kargb", "<your text>", "Carbonize your text.(random style)"
