@@ -307,7 +307,7 @@ def get_lst_of_files(input_directory, output_lst):
     return output_lst
 
 
-CmdHelp("archiver").add_command(
+CmdHelp("ᴀʀᴄʜɪᴠᴇʀ").add_command(
     "zip", "Reply to file/media", "It will zip the file/media"
 ).add_command(
     "tar", "Reply to file/media", "It will tar the file/media"
