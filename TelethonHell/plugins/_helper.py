@@ -6,9 +6,9 @@ from TelethonHell.plugins import *
 
 
 msg = f"""
-**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**
-  •        [📑 Repo 📑](https://github.com/The-HellBot/HellBot)
-  •        [HellBot Network](https://t.me/hellbot_networks)
+**Rᴀᴅʜᴀ Usᴇʀʙᴏᴛ**
+  •        [Rᴇᴘᴏ ⚡](https://t.me/RadhaX2Support)
+  •        [Uᴘᴅᴀᴛᴇs ✨](https://t.me/RadhaX2Update)
   •  ©️ {hell_channel} ™
 """
 
@@ -104,4 +104,3 @@ async def cmdinfo(event):
     except KeyError:
         return await parse_error(event, f"__• No command named:__ `{cmd}`", False)
     await eor(event, f"**• File:** \n» __{file}__ \n\n**• {cmd}:** \n» __{info}__ \n\n**• Example:** \n» `{str(exam)}`")
-
