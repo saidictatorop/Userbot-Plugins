@@ -532,7 +532,7 @@ async def _(dislike):
     await eor(dislike, T)
 
 
-CmdHelp("arts").add_command(
+CmdHelp("ᴀʀᴛs").add_command(
     "elove", None, "Use and see"
 ).add_command(
     "monster", None, "Use and see"
