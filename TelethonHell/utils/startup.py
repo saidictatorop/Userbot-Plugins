@@ -94,7 +94,7 @@ async def start_msg(client, pic, version, total):
     )
 
 
-# Joins the hellbot chat and channel from all clients
+# Joins the radhabot chat and channel from all clients
 async def join_it(client):
     if client:
         try:
