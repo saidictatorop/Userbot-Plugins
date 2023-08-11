@@ -1,13 +1,13 @@
 <h1 align="center">
-  <b>†hê Hêllẞø† 🇮🇳</b>
+  <b>ʀᴀᴅʜᴀ ᴜꜱᴇʀʙᴏᴛ 🇮🇳</b>
 </h1>
 
 <p align="center">
-  <img src="https://te.legra.ph/file/fd0c3c2201447746fd1d0.jpg" alt="The-HellBot">
+  <img src="https://telegra.ph/file/d53fe3d779e17facc847f.jpg" alt="RadhaUserBot">
 </p>
 
 <h6 align="center">
-  <b>⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡</b>
+  <b>⚡ ʟᴇɢᴇɴᴅᴀʀy ᴀꜰ ʀᴀᴅʜᴀ ᴜꜱᴇʀʙᴏᴛ ⚡</b>
 </h6>
 
 <h3 align="center">
@@ -19,14 +19,14 @@
 <details><summary><h1><b>Deploy Alternatives 🥷🏻</h1></b></summary>
 
   - 
-    [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/The-HellBot/Plugins-T&branch=master&name=hellbot-koyeb&run_command=bash+runkoyeb&env[APP_ID]&env[API_HASH]&env[BOT_TOKEN]&env[HELLBOT_SESSION]&env[DATABASE_URL])
+    [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Radhak8/Userbot-Plugins-T&branch=master&name=hellbot-koyeb&run_command=bash+runkoyeb&env[APP_ID]&env[API_HASH]&env[BOT_TOKEN]&env[HELLBOT_SESSION]&env[DATABASE_URL])
 
 </details>
 
 -----
 
 <h1 align="center">
-  <b>Follow this format to make your own plugin for HellBot</b>
+  <b>Follow this format to make your own plugin for RadhaBot</b>
 </h1>
 
 ```python3
@@ -92,9 +92,9 @@ CmdHelp("hii").add_command(
 
 ![](https://www.gnu.org/graphics/gplv3-or-later.png)
 
-<h4 align="center">Copyright (C) 2022 <a href="https://github.com/The-HellBot">The-HellBot</a></h4>
+<h4 align="center">Copyright (C) 2022 <a href="https://github.com/The-Radhak8">RadhaXUserBot</a></h4>
 
-Project [HellBot](https://github.com/The-HellBot/HellBot) is free software: you can redistribute it and/or modify
+Project Radaha Userbot](https://github.com/Radhak8/RadhaXUserBot) is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
