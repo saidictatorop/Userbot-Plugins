@@ -12,11 +12,11 @@ from TelethonHell.clients.client_list import get_user_id
 from TelethonHell.plugins import *
 
 ping_txt = """
-<b><i>╰•★★  ℘ơŋɠ ★★•╯</b></i>
+<b><i>╰•★★  ᴩᴏɴɢ ★★•╯</b></i>
 
-    ⚘  <i>ʂ℘ɛɛɖ :</i> <code>{}</code>
-    ⚘  <i>ų℘ɬıɱɛ :</i> <code>{}</code>
-    ⚘  <i>ơῳŋɛཞ :</i> {}
+    ⚘  <i>ꜱᴩᴇᴇᴅ :</i> <code>{}</code>
+    ⚘  <i>ᴜᴩᴛɪᴍᴇ :</i> <code>{}</code>
+    ⚘  <i>ᴏᴡɴᴇʀ :</i> {}
 """
 
 
@@ -33,7 +33,7 @@ async def pong(event):
         PIC = choice(pic_list)
     else:
         PIC = None
-    hell = await eor(event, "`·.·★ ℘ıŋɠ ★·.·´")
+    hell = await eor(event, "`·.·★ ᴩᴏɴɢ ★·.·´")
     ForGo10God, HELL_USER, hell_mention = await client_id(event, is_html=True)
     uptime = await get_time((time.time() - StartTime))
     end = datetime.datetime.now()
@@ -170,7 +170,7 @@ async def _(event):
     await hell.edit(f"⛓️ **Chain length :**  `{count}`")
 
 
-CmdHelp("bot").add_command(
+CmdHelp("ʙᴏᴛ").add_command(
     "dc", None, "Gets the DataCenter Number"
 ).add_command(
     "config", None, "😒"
