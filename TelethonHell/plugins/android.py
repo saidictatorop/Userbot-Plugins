@@ -236,7 +236,7 @@ async def twrp(request):
     await eor(request, reply)
 
 
-CmdHelp("android").add_command(
+CmdHelp("Aɴᴅʀᴏɪᴅ").add_command(
     "magisk", None, "Get latest magisk release"
 ).add_command(
     "device", "<codename>", "Get info about android device codename or model"
