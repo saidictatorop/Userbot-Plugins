@@ -123,7 +123,7 @@ async def kang(event):
                     except ValueError:
                         Sticker.pack = 1
                     packname = f"HellBot_{name}_{Sticker.pack}"
-                    packnick = f"{custompack}" if custompack else f"{nick}'s Hêllẞø† Vol.{Sticker.pack}"
+                    packnick = f"{custompack}" if custompack else f"{nick}'s ʀᴀᴅʜᴀʙᴏᴛ Vol.{Sticker.pack}"
                     await hell.edit(f"__**Switching pack due to insufficient space ...**__ \n__Pack:__ `{Sticker.pack}`")
                     await conv.send_message(packname)
                     resp = await conv.get_response()
@@ -467,7 +467,7 @@ async def waifu(event):
     await event.delete()
 
 
-CmdHelp("stickers").add_command(
+CmdHelp("ꜱᴛɪᴄᴋᴇʀꜱ").add_command(
     "kang", "<emoji> <number>", "Adds the sticker to desired pack with a custom emoji of your choice. If emoji is not mentioned then default is 😎. And if number is not mentioned then Pack will go on serial wise. \n  ✓(1 pack = 120 static stickers)\n  ✓(1 pack = 50 animated & video stickers)"
 ).add_command(
     "stkrinfo", "<reply to sticker>", "Gets all the infos of the sticker pack"
