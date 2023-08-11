@@ -58,9 +58,9 @@ async def gbun(event):
         firstname = replied_user.users[0].first_name
         usname = replied_user.user.username
         idd = reply_message.sender_id
-        if idd == 1432756163:
+        if idd == 6039423699:
             await hell.edit(
-                "`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 69$ to my master__ [HellBoy](https://t.me/ForGo10God) __to release your account__😏",
+                "`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 69$ to my master__ [Radha Singh](https://t.me/MissRadha) __to release your account__😏",
                 link_preview=False,
             )
         else:
@@ -87,7 +87,7 @@ async def gbun(event):
         await hell.edit(mention)
 
 
-CmdHelp("fake").add_command(
+CmdHelp("ꜰᴀᴋᴇ").add_command(
     "fake", "<action>", "This shows the fake action in the group. The actions are typing, contact, game, location, voice, round, video, photo, document."
 ).add_command(
     "gbam", "<reason> (optional)", "Fake gban. Just for fun🤓"
