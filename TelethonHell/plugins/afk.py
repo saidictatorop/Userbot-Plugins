@@ -541,7 +541,7 @@ if H5:
         await event.delete()
 
 
-CmdHelp("afk").add_command(
+CmdHelp("Aғᴋ").add_command(
     "afk", "<reply to media>/<reason>", "Marks you AFK with reason also shows afk time. Media also supported.", "afk <reason>`"
 ).add_extra(
     "📌 Exception", "Use # in a msg to stay in afk mode while chatting."
