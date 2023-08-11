@@ -114,7 +114,7 @@ async def _(event):
         await eod(event, "Something went wrong. Please try again later.")
 
 
-CmdHelp("search").add_command(
+CmdHelp("ꜱᴇᴀʀᴄʜ").add_command(
     "rchiv", "<query>", "Gives you the archive link of given query from WayBack Machine"
 ).add_command(
     "gem", "<query>", "Gives you the link of given query from Government e-Marketplace (gem.gov.in)"
