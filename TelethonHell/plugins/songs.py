@@ -190,7 +190,7 @@ async def _(event):
 
 
 
-CmdHelp("songs").add_command(
+CmdHelp("ꜱᴏɴɢꜱ").add_command(
     "song", "<song name>", "Downloads the song from YouTube."
 ).add_command(
     "vsong", "<song name>", "Downloads the Video Song from YouTube."
