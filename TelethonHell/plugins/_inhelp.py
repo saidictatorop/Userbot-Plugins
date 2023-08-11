@@ -18,12 +18,12 @@ else:
 
 
 alive_txt = """{}\n
-<b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
-<b>Telethon ≈</b>  <i>{}</i>
-<b>Hêllẞø† ≈</b>  <i>{}</i>
-<b>Uptime ≈</b>  <i>{}</i>
-<b>Abuse ≈</b>  <i>{}</i>
-<b>Sudo ≈</b>  <i>{}</i>
+<b><i>✨ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ ✨</b></i>
+<b>ᴛᴇʟᴇᴛʜᴏɴ ≈</b>  <i>{}</i>
+<b>ᴜꜱᴇʀʙᴏᴛ ≈</b>  <i>{}</i>
+<b>ᴜᴩᴛɪᴍᴇ ≈</b>  <i>{}</i>
+<b>ᴀʙᴜꜱᴇ ≈</b>  <i>{}</i>
+<b>ꜱᴜᴅᴏ ≈</b>  <i>{}</i>
 """
 
 
@@ -73,8 +73,8 @@ if Config.BOT_USERNAME and tbot:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://te.legra.ph/file/3a48c5756d2a9763eafaf.jpg"
-            help_msg = f"🔰 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}"
+                help_pic = "https://telegra.ph/file/7377b85e2b25b5621a188.jpg"
+            help_msg = f"🧑‍💻 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}"
             if help_pic == "DISABLE":
                 result = builder.article(
                     f"Hey! Only use {hl}help please",
@@ -99,14 +99,14 @@ if Config.BOT_USERNAME and tbot:
                 )
         elif event.query.user_id in auth and query == "alive":
             uptime = await get_time((time.time() - StartTime))
-            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b>нєℓℓвσт ιѕ σиℓιиє</b> «««"
+            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b>Rᴀᴅʜᴀ ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ</b> «««"
             alive_name = gvarstat("ALIVE_NAME") or HELL_USER
             he_ll = alive_txt.format(
                 alive_msg, telethon_version, hellbot_version, uptime, abuse_m, is_sudo
             )
             alv_btn = [
                 [
-                    Button.url(f"{alive_name}", f"tg://openmessage?user_id={ForGo10God}")
+                    Button.url(f"{alive_name}", f"tg://openmessage?user_id={MissRadha}")
                 ],
                 [
                     Button.url("My Channel", f"https://t.me/{my_channel}"),
@@ -122,7 +122,7 @@ if Config.BOT_USERNAME and tbot:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://te.legra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+                PIC = "https://telegra.ph/file/ecd0dae043e5f10aca057.mp4"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     PIC,
@@ -151,7 +151,7 @@ if Config.BOT_USERNAME and tbot:
 
         elif event.query.user_id in auth and query == "pm_warn":
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"Rᴀᴅʜᴀ Usᴇʀʙᴏᴛ Pᴍ Sᴇᴄᴜʀɪᴛʏ ⚡\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
             a = gvarstat("PMPERMIT_PIC")
@@ -165,7 +165,7 @@ if Config.BOT_USERNAME and tbot:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://te.legra.ph/file/58df4d86400922aa32acd.jpg"
+                PIC = "https://telegra.ph/file/7377b85e2b25b5621a188.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     file=PIC,
@@ -204,28 +204,28 @@ if Config.BOT_USERNAME and tbot:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
+                text=f"**ʀᴀᴅʜᴀ ᴜꜱᴇʀʙᴏᴛ ✨**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/The-HellBot/HellBot")],
-                    [Button.url("HellBot Network", "https://t.me/hellbot_networks")],
+                    [Button.url("Rᴇᴘᴏ ⚡", "https://t.me/RadhaX2Support")],
+                    [Button.url("Uᴘᴅᴀᴛᴇs", "https://t.me/RadhaX2Update")],
                 ],
             )
 
         else:
             result = builder.article(
                 "@Its_HellBot",
-                text="""**Hey! This is [Hêllẞø†](https://t.me/its_hellbot) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [ʀᴀᴅʜᴀ ᴜꜱᴇʀʙᴏᴛ](https://t.me/RadhaX2Update) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        Button.url("• Updates •", "https://t.me/Its_HellBot"),
-                        Button.url("• Chat •", "https://t.me/hellbot_chats"),
+                        Button.url("• Uᴘᴅᴀᴛᴇs •", "https://t.me/Its_HellBot"),
+                        Button.url("• Cʜᴀᴛ •", "https://t.me/hellbot_chats"),
                     ],
                     [
-                        Button.url("• Repo •", "https://github.com/The-HellBot/HellBot"),
-                        Button.url("• Docs •", "https://hellbot.tech"),
+                        Button.url("• Rᴇᴘᴏ •", "https://t.me/RadhaX2Support"),
+                        Button.url("• Sᴜᴘᴘᴏʀᴛ •", "https://t.me/RadhaX2Support"),
                     ],
                     [
-                        Button.url("◈ HellBot Network ◈", "https://t.me/hellbot_networks"),
+                        Button.url("Uᴘᴅᴀᴛᴇs 🌝", "https://t.me/RadhaX2Update"),
                     ],
                 ],
                 link_preview=False,
@@ -239,7 +239,7 @@ if Config.BOT_USERNAME and tbot:
         if event.query.user_id in auth:
             reply_popup = "This is for Other Users..."
         else:
-            reply_popup = "🔰 This is Hêllẞø† PM Security to keep away unwanted retards from spamming PM !!"
+            reply_popup = "✨ This is RadhaBot PM Security to keep away unwanted retards from spamming PM !!"
         await event.answer(reply_popup, cache_time=0, alert=True)
 
     @tbot.on(CallbackQuery(data=compile(b"req")))
@@ -257,7 +257,7 @@ if Config.BOT_USERNAME and tbot:
                 first_name = first_name.replace("\u2060", "")
             await tbot.send_message(
                 Config.LOGGER_ID,
-                f"#PM_REQUEST \n\n⚜️ You got a PM request from [{first_name}](tg://user?id={event.query.user_id}) !",
+                f"#PM_REQUEST \n\n😀 You got a PM request from [{first_name}](tg://user?id={event.query.user_id}) !",
             )
 
     @tbot.on(CallbackQuery(data=compile(b"heheboi")))
@@ -306,20 +306,20 @@ if Config.BOT_USERNAME and tbot:
 
             if help_pic == "DISABLE":
                 await event.edit(
-                    text=f"🔰 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}",
+                    text=f"🧑‍💻 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}",
                     buttons=simp[1],
                     link_preview=False,
                     file=None,
                 )
             else:
                 await event.edit(
-                    text=f"🔰 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}",
+                    text=f"🧑‍💻 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}",
                     buttons=simp[1],
                     link_preview=False,
                     file=help_pic,
                 )
         else:
-            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.", cache_time=0, alert=True)
+            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @RadhaX2Support for more info.", cache_time=0, alert=True)
 
     @tbot.on(CallbackQuery(data=compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
@@ -330,18 +330,18 @@ if Config.BOT_USERNAME and tbot:
                 f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen"
             )
             await event.edit(
-                f"**🎭 Closed HellBot's help menu**\n\n**Bot Of:**  {hell_mention}\n\n        [©️ Hêllẞø† ™️]({chnl_link})",
+                f"**🎭 Closed RadhaBot help menu**\n\n**Bot Of:**  {hell_mention}\n\n        [RadhaBot ™️]({chnl_link})",
                 buttons=veriler,
                 link_preview=False,
             )
         else:
-            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.", cache_time=0, alert=True)
+            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @RadhaX2Support for more info.", cache_time=0, alert=True)
             
     @tbot.on(CallbackQuery(data=compile(b"send\((.+?)\)")))
     async def send(event):
         plugin = event.data_match.group(1).decode("UTF-8")
         _, _, hell_mention = await client_id(event, event.query.user_id)
-        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt]({chnl_link})** ⚡"
+        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟᴇɢᴇɴᴅᴀʀy ᴀꜰ ʀᴀᴅʜᴀʙᴏᴛ]({chnl_link})** ⚡"
         the_plugin_file = "./TelethonHell/plugins/{}.py".format(plugin.lower())
         butt = Button.inline(f"{hell_emoji} Main Menu {hell_emoji}", data="reopen")
         if os.path.exists(the_plugin_file):
@@ -366,13 +366,13 @@ if Config.BOT_USERNAME and tbot:
                 apn.append(y)
         if event.query.user_id in auth:
             await event.edit(
-                f"🔰 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}`\n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ {page + 1}/{veriler[0]}",
+                f"🧑‍💻 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}`\n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ {page + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @RadhaX2Support for more info.",
                 cache_time=0,
                 alert=True,
             )
@@ -393,7 +393,7 @@ if Config.BOT_USERNAME and tbot:
             )
 
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
-        buttons.append([Button.inline(f"📎 Send Plugin 📎", data=f"send({commands})")])
+        buttons.append([Button.inline(f"✨ Send Plugin ✨", data=f"send({commands})")])
         buttons.append([Button.inline(f"{hell_emoji} Main Menu {hell_emoji}", data=f"page({page})")])
         if event.query.user_id in auth:
             await event.edit(
@@ -403,7 +403,7 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @RadhaX2Support for more info.",
                 cache_time=0,
                 alert=True,
             )
@@ -459,4 +459,4 @@ if Config.BOT_USERNAME and tbot:
             )
 
 
-# hellbot
+# RadhaBot
