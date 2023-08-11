@@ -20,7 +20,7 @@ FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 async def _(event):
     current_time = datetime.datetime.now().strftime(
         "⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡\
-        \n   HELLBOT TIMEZONE   \
+        \n   RADHABOT TIMEZONE   \
         \n   LOCATION: India🇮🇳  \
         \n   Time: %H:%M:%S  \
         \n   Date: %d.%m.%y     \
@@ -392,7 +392,7 @@ async def _(event):
         )
 
 
-CmdHelp("tools").add_command(
+CmdHelp("ᴛᴏᴏʟꜱ").add_command(
     "xkcd", "<query>", "Searches for the query for the relevant XKCD comic"
 ).add_command(
     "color", "<color code>", "Sends you a plain image of the color", ".color #ff0000"
@@ -409,7 +409,7 @@ CmdHelp("tools").add_command(
 ).add_command(
     "url", "<link>", "Shortens the given long link"
 ).add_command(
-    "currency", "<amount> <from> <to>", "Currency converter for HellBot", ".currency 10 usd inr"
+    "currency", "<amount> <from> <to>", "Currency converter for RadhaBot", ".currency 10 usd inr"
 ).add_command(
     "calendar", "<year / month>", "Shows you the calendar of given month and year"
 ).add_command(
