@@ -1,4 +1,4 @@
 #! /bin/bash
 
-echo "!!!   Starting to Run HellBot on Koyeb   !!!"
+echo "!!!   Starting to Run RadhaBot on Koyeb   !!!"
 python3 -m TelethonHell
