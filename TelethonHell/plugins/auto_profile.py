@@ -57,7 +57,7 @@ async def mine(event):
     await eor(event, output_str)
 
 
-CmdHelp("auto_profile").add_command(
+CmdHelp("ᴀᴜᴛᴏ_ᴘʀᴏғɪʟᴇ").add_command(
     "autobio", None, "Changes your bio with random quotes. You can set your own bio by setting up gvar BIO_MSG."
 ).add_command(
     "autoname", None, "Changes your name with time."
