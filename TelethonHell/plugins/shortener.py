@@ -33,7 +33,7 @@ def short(api_key, long_url):
         return None
 
 
-CmdHelp("shortener").add_command(
+CmdHelp("ꜱʜᴏʀᴛᴇɴᴇʀ").add_command(
     "shorten", "<url>", "Shortens the given url."
 ).add_info(
     "Shorten using shareus"
