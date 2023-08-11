@@ -11,25 +11,25 @@ from TelethonHell.plugins import *
 # -------------------------------------------------------------------------------
 
 ALIVE_TEMP = """
-<b><i>🔥🔥ɦɛʟʟɮօt ɨs օռʟɨռɛ🔥🔥</i></b>
-<b><i>↼ Øwñêr ⇀</i></b> : 『 {hell_mention} 』
+<b><i>ᴜꜱᴇʀʙᴏᴛ ɪꜱ ᴏɴʟɪɴᴇ ⚡</i></b>
+<b><i>↼ Oᴡɴᴇʀ ⇀</i></b> : 『 {hell_mention} 』
 ╭──────────────
-┣─ <b>» Telethon:</b> <i>{telethon_version}</i>
-┣─ <b>» Hêllẞø†:</b> <i>{hellbot_version}</i>
-┣─ <b>» Sudo:</b> <i>{is_sudo}</i>
-┣─ <b>» Uptime:</b> <i>{uptime}</i>
-┣─ <b>» Ping:</b> <i>{ping}</i>
+┣─ <b>» ᴛᴇʟᴇᴛʜᴏɴ:</b> <i>{telethon_version}</i>
+┣─ <b>» ᴜꜱᴇʀʙᴏᴛ:</b> <i>{hellbot_version}</i>
+┣─ <b>» ꜱᴜᴅᴏ:</b> <i>{is_sudo}</i>
+┣─ <b>» ᴜᴩᴛɪᴍᴇ:</b> <i>{uptime}</i>
+┣─ <b>» ᴩɪɴɢ:</b> <i>{ping}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/its_hellbot'>[†hê Hêllẞø†]</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/RadhaX2Update'>[Uᴘᴅᴀᴛᴇs]</a> «««</i></b>
 """
 
 msg = """{}\n
-<b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
-<b>Telethon ≈</b>  <i>{}</i>
-<b>Hêllẞø† ≈</b>  <i>{}</i>
-<b>Uptime ≈</b>  <i>{}</i>
-<b>Abuse ≈</b>  <i>{}</i>
-<b>Sudo ≈</b>  <i>{}</i>
+<b><i>✨ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ ✨</b></i>
+<b>ᴛᴇʟᴇᴛʜᴏɴ ≈</b>  <i>{}</i>
+<b>ᴜꜱᴇʀʙᴏᴛ ≈</b>  <i>{}</i>
+<b>ᴜᴩᴛɪᴍᴇ ≈</b>  <i>{}</i>
+<b>ᴀʙᴜꜱᴇ ≈</b>  <i>{}</i>
+<b>ꜱᴜᴅᴏ ≈</b>  <i>{}</i>
 """
 # -------------------------------------------------------------------------------
 
@@ -65,7 +65,7 @@ async def _(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://te.legra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+        PIC = "https://telegra.ph/file/ecd0dae043e5f10aca057.mp4"
     end = datetime.datetime.now()
     ping = (end - start).microseconds / 1000
     alive = alive_temp.format(
