@@ -1,5 +1,5 @@
 #! /bin/bash
 # mogenius.sh
 
-echo "Starting HellBot on Mogenius"
+echo "Starting RADHABot on Mogenius"
 python3 webapp.py
