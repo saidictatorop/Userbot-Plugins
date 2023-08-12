@@ -177,4 +177,4 @@ async def unsave_stcr(event, sticker):
         LOGS.info(e)
 
 
-# hellbot
+# radhabot
