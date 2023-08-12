@@ -88,14 +88,14 @@ async def git_commit(file_name, path, branch, hellbot):
 git_user = """
 **◈ {gh_type}:** [{name}]({html_url})
 
-**◈ Blog:** __{blog}__
-**◈ Repo:** __{public_repos}__
-**◈ Company:** __{company}__
-**◈ Location:** __{location}__
-**◈ Followers:** __{followers}__
-**◈ Following:** __{following}__
-**◈ Created at:** __{created_at}__
-**◈ Bio:** __{bio}__
+**◈ ʙʟᴏɢ:** __{blog}__
+**◈ ʀᴇᴩᴏ:** __{public_repos}__
+**◈ ᴄᴏᴍᴩᴀɴy:** __{company}__
+**◈ ʟᴏᴄᴀᴛɪᴏɴ:** __{location}__
+**◈ ꜰᴏʟʟᴏᴡᴇʀꜱ:** __{followers}__
+**◈ ꜰᴏʟʟᴏᴡɪɴɢ:** __{following}__
+**◈ ᴄʀᴇᴀᴛᴇᴅ ᴀᴛ:** __{created_at}__
+**◈ ʙɪᴏ:** __{bio}__
 """
 
 @hell_cmd(pattern="github(?:\s|$)([\s\S]*)")
