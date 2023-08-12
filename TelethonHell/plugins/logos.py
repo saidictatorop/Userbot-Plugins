@@ -59,7 +59,7 @@ async def logo(event):
     await event.client.send_file(
         event.chat_id,
         "logo.png",
-        caption=f"**Made by:** {hell_mention} \n**Time taken:** `{ms} seconds`",
+        caption=f"**Mᴀᴅᴇ ʙʏ 🐼:** {hell_mention} \n**Time taken:** `{ms} seconds`",
         reply_to=reply,
     )
     await hell.delete()
@@ -68,8 +68,8 @@ async def logo(event):
     os.remove("logo_bg.jpg")
 
 
-CmdHelp("logos").add_command(
-    "logo", "-{type} {logo text}", "Makes a logo with the given text. If replied to a picture makes logo on that else gets random BG.", f"logo Hellbot \n{hl}logo-car HellBot \n{hl}logo-anime HellBot \netc..."
+CmdHelp("ʟᴏɢᴏꜱ").add_command(
+    "logo", "-{type} {logo text}", "Makes a logo with the given text. If replied to a picture makes logo on that else gets random BG.", f"logo Hellbot \n{hl}logo-car HellBot \n{hl}logo-anime RadhaBot \netc..."
 ).add_info(
     "Logo Maker."
 ).add_warning(
