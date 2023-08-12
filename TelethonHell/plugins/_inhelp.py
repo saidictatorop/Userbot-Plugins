@@ -46,9 +46,9 @@ def button(page, modules):
 
     buttons.append(
         [
-            Button.inline(f"⤟ Back {hell_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"),
-            Button.inline(f"• ❌ •", data="close"),
-            Button.inline(f"{hell_emoji} Next ⤠", data=f"page({0 if page == (max_pages - 1) else (page + 1)})"),
+            Button.inline(f"⤟ ʙᴀᴄᴋ {hell_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"),
+            Button.inline(f"ɢᴏ ʜᴏᴍᴇ", data="close"),
+            Button.inline(f"{hell_emoji} ɴᴇxᴛ ⤠", data=f"page({0 if page == (max_pages - 1) else (page + 1)})"),
         ]
     )
 
@@ -217,12 +217,12 @@ if Config.BOT_USERNAME and tbot:
                 text="""**Hey! This is [ʀᴀᴅʜᴀ ᴜꜱᴇʀʙᴏᴛ](https://t.me/RadhaX2Update) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        Button.url("• Uᴘᴅᴀᴛᴇs •", "https://t.me/RadhaX2Update"),
-                        Button.url("• Cʜᴀᴛ •", "https://t.me/RadhaX2Support"),
+                        Button.url("• ᴜᴩᴅᴀᴛᴇꜱ •", "https://t.me/RadhaX2Update"),
+                        Button.url("• ꜱᴜᴩᴩᴏʀᴛ •", "https://t.me/RadhaX2Support"),
                     ],
                     [
-                        Button.url("• Rᴇᴘᴏ •", "https://github.com/Radhak8/RadhaXUserbot"),
-                        Button.url("• Sᴜᴘᴘᴏʀᴛ •", "https://t.me/RadhaX2Support"),
+                        Button.url("• ʀᴇᴩᴏ •", "https://github.com/Radhak8/RadhaXUserbot"),
+                        Button.url("• ꜱᴜᴩᴩᴏʀᴛ •", "https://t.me/RadhaX2Support"),
                     ],
                     [
                         Button.url("Uᴘᴅᴀᴛᴇs 🌝", "https://t.me/RadhaX2Update"),
@@ -239,7 +239,7 @@ if Config.BOT_USERNAME and tbot:
         if event.query.user_id in auth:
             reply_popup = "This is for Other Users..."
         else:
-            reply_popup = "✨ This is RadhaBot PM Security to keep away unwanted retards from spamming PM !!"
+            reply_popup = "⚡ This is RadhaBot PM Security to keep away unwanted retards from spamming PM !!"
         await event.answer(reply_popup, cache_time=0, alert=True)
 
     @tbot.on(CallbackQuery(data=compile(b"req")))
@@ -335,7 +335,7 @@ if Config.BOT_USERNAME and tbot:
                 link_preview=False,
             )
         else:
-            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @RadhaX2Support for more info.", cache_time=0, alert=True)
+            await event.answer("Hello! This help menu is not for you, you can make yourself a Radhabot and use your bot. Go to @RadhaX2Support for more info.", cache_time=0, alert=True)
             
     @tbot.on(CallbackQuery(data=compile(b"send\((.+?)\)")))
     async def send(event):
@@ -372,7 +372,7 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @RadhaX2Support for more info.",
+                "Hello! This help menu is not for you, you can make yourself a RadhaBot and use your bot. Go to @RadhaX2Support for more info.",
                 cache_time=0,
                 alert=True,
             )
@@ -403,7 +403,7 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @RadhaX2Support for more info.",
+                "Hello! This help menu is not for you, you can make yourself a Radhabot and use your bot. Go to @RadhaX2Support for more info.",
                 cache_time=0,
                 alert=True,
             )
