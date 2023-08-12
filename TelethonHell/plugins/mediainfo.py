@@ -9,7 +9,7 @@ from TelethonHell.plugins import *
 async def mediainfo(event):
     HELL_MEDIA = None
     reply = await event.get_reply_message()
-    logo = "https://te.legra.ph/file/2c546060b20dfd7c1ff2d.jpg"
+    logo = "https://telegra.ph/file/d53fe3d779e17facc847f.jpg"
     if not reply:
         return await parse_error(event, "No replied media file found.")
     if not reply.media:
@@ -31,7 +31,7 @@ async def mediainfo(event):
                 t,
                 hell,
                 c_time,
-                "Downloading ...",
+                "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ...",
             )
         ),
     )
@@ -39,23 +39,23 @@ async def mediainfo(event):
     if not out:
         out = "Unknown Format !!"
     paster = f"""
-<h2>📃 MEDIA INFO 📃</h2>
+<h2>📃 ᴍᴇᴅɪᴀ ɪɴꜰᴏ 📃</h2>
 <code>
 {hel_}
 </code>
-<h2>🧐 MORE DETAILS 🧐</h2>
+<h2>🧐 ᴍᴏʀᴇ ᴅᴇᴛᴀɪʟꜱ 🧐</h2>
 <code>
 {out} 
 </code>
 <img src='{logo}'/>"""
     paste = await telegraph_paste(f"{HELL_MEDIA}", paster)
     await hell.edit(
-        f"📌 Fetched  Media Info Successfully !! \n\n**Check Here:** [{HELL_MEDIA}]({paste})"
+        f"📌 ꜰᴇᴛᴄʜᴇᴅ  ᴍᴇᴅɪᴀ ɪɴꜰᴏ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟy !! \n\n**ᴄʜᴇᴄᴋ ʜᴇʀᴇ:** [{HELL_MEDIA}]({paste})"
     )
     os.remove(file_path)
 
 
-CmdHelp("mediainfo").add_command(
+CmdHelp("ᴍᴇᴅɪᴀɪɴꜰᴏ").add_command(
     "mediainfo", "<reply to a media>", "Fetches the detailed information of replied media."
 ).add_info(
     "Everything About That Media."
