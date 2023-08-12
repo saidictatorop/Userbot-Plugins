@@ -93,7 +93,7 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     help_pic,
                     text=help_msg,
-                    title="HellBot Alive",
+                    title="RadhaBot Alive",
                     buttons=veriler[1],
                     link_preview=False,
                 )
@@ -143,7 +143,7 @@ if Config.BOT_USERNAME and tbot:
             else:
                 result = builder.article(
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="RadhaBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -171,9 +171,9 @@ if Config.BOT_USERNAME and tbot:
                     file=PIC,
                     text=HELL_FIRST,
                     buttons=[
-                        [Button.inline("📝 Request Approval", data="req")],
-                        [Button.inline("🚫 Block", data="heheboi")],
-                        [Button.inline("❓ Curious", data="pmclick")],
+                        [Button.inline("✨ Rᴇǫᴜᴇsᴛ Approval", data="req")],
+                        [Button.inline("🌝 Bʟᴏᴄᴋ", data="heheboi")],
+                        [Button.inline("❔ Curious", data="pmclick")],
                     ],
                     link_preview=False,
                 )
@@ -453,7 +453,7 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @RadhaX2Support for more info.",
                 cache_time=0,
                 alert=True,
             )
