@@ -183,8 +183,8 @@ if Config.BOT_USERNAME and tbot:
                     text=HELL_FIRST,
                     title="Hellbot PM Permit",
                     buttons=[
-                        [Button.inline("📝 Request Approval", data="req")],
-                        [Button.inline("🚫 Block", data="heheboi")],
+                        [Button.inline("✨ Rᴇǫᴜᴇsᴛ Approval", data="req")],
+                        [Button.inline("🌝 Bʟᴏᴄᴋ", data="heheboi")],
                         [Button.inline("❓ Curious", data="pmclick")],
                     ],
                     link_preview=False,
@@ -194,8 +194,8 @@ if Config.BOT_USERNAME and tbot:
                     text=HELL_FIRST,
                     title="Hellbot PM Permit",
                     buttons=[
-                        [Button.inline("📝 Request Approval", data="req")],
-                        [Button.inline("🚫 Block", data="heheboi")],
+                        [Button.inline("✨ Rᴇǫᴜᴇsᴛ Approval", data="req")],
+                        [Button.inline("🌝 Bʟᴏᴄᴋ", data="heheboi")],
                         [Button.inline("❓ Curious", data="pmclick")],
                     ],
                     link_preview=False,
@@ -453,7 +453,7 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @RadhaX2Support for more info.",
+                "Hello! This help menu is not for you, you can make yourself a RadhaBot and use your bot. Go to @RadhaX2Support for more info.",
                 cache_time=0,
                 alert=True,
             )
