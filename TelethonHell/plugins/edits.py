@@ -156,7 +156,7 @@ async def figlet(event):
     await eor(event, "‌‌‎`{}`".format(result))
 
 
-CmdHelp("edits").add_command(
+CmdHelp("ᴇᴅɪᴛꜱ").add_command(
     "hehe", None, "Use and see"
 ).add_command(
     "wavee", None, "Use and see"
