@@ -46,7 +46,6 @@ async def plug_load(path):
 async def hell_is_on(total):
     await update_sudo()
     await logger_check(Hell)
-    await start_msg(HellBot, HELL_PIC, __hellver__, total)
     await join_it(Hell)
     await join_it(H2)
     await join_it(H3)
