@@ -96,4 +96,4 @@ def time_formatter(milliseconds: int) -> str:
     return tmp[:-2]
 
 
-# hellbot
+# radhabot
