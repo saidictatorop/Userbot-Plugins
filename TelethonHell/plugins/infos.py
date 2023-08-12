@@ -58,19 +58,19 @@ async def _(event):
     caption = """
 <b><i><u>Extracted User info From Telegram</b></i></u>
 
-<b>🆔️ User ID</b>: <code>{}</code>
-<b>📎 Profile Link</b>: <a href='tg://user?id={}'>Click Here🚪</a>
-<b>🗣️ First Name</b>: <code>{}</code>
-<b>🗣️ Last Name</b>: <code>{}</code>
-<b>👨🏿‍💻 Bio</b>: {}
-<b>🌐 DC ID</b>: {}
-<b>📸 Pictures</b> : {}
-<b>🧐 Restricted</b>: {}
-<b>✅ Verified</b>: {}
-<b>🤖 Bot</b>: {}
-<b>👥 Common Groups</b>: {}
+<b>🆔️ ᴜꜱᴇʀ ɪᴅ</b>: <code>{}</code>
+<b>📎 ᴩʀᴏꜰɪʟᴇ ʟɪɴᴋ</b>: <a href='tg://user?id={}'>Click Here🚪</a>
+<b>🗣️ ꜰɪʀꜱᴛ ɴᴀᴍᴇ</b>: <code>{}</code>
+<b>🗣️ ʟᴀꜱᴛ ɴᴀᴍᴇ</b>: <code>{}</code>
+<b>👨🏿‍💻 ʙɪᴏ</b>: {}
+<b>🌐 ᴅᴄ ɪᴅ</b>: {}
+<b>📸 ᴩɪᴄᴛᴜʀᴇꜱ</b> : {}
+<b>🧐 ʀᴇꜱᴛʀɪᴄᴛᴇᴅ</b>: {}
+<b>✅ ᴠᴇʀɪꜰɪᴇᴅ</b>: {}
+<b>🤖 ʙᴏᴛ</b>: {}
+<b>👥 ᴄᴏᴍᴍᴏɴ ɢʀᴏᴜᴩꜱ</b>: {}
 
-<b>⚡ <a href='https://t.me/HellBot_Network'>From DataBase of HellBot</a> ⚡ </b>
+<b>⚡ <a href='https://t.me/RadhaX2Update'>ꜰʀᴏᴍ ᴅᴀᴛᴀʙᴀꜱᴇ ᴏꜰ ʀᴀᴅʜᴀʙᴏᴛ</a> ⚡ </b>
 """.format(
         user_id,
         user_id,
@@ -570,7 +570,7 @@ async def _(event):
         await hell.edit("🔸 **Current Chat ID:** `{}`".format(str(event.chat_id)))
 
 
-CmdHelp("infos").add_command(
+CmdHelp("ɪɴꜰᴏꜱ").add_command(
     "admins", None, "Gets the list of admins in current chat along with the crator"
 ).add_command(
     "id", "<reply>", "Gets the user id of the replied user."
