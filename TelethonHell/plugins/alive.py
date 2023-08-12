@@ -20,7 +20,7 @@ ALIVE_TEMP = """
 ┣─ <b>» ᴜᴩᴛɪᴍᴇ:</b> <i>{uptime}</i>
 ┣─ <b>» ᴩɪɴɢ:</b> <i>{ping}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/RadhaX2Update'>[Uᴘᴅᴀᴛᴇs]</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/RadhaX2Update'>[ᴜᴩᴅᴀᴛᴇꜱ]</a> «««</i></b>
 """
 
 msg = """{}\n
