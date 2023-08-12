@@ -169,4 +169,4 @@ async def get_flag(event):
         url = None
         return flag, url
 
-# hellbot
+# radhabot
