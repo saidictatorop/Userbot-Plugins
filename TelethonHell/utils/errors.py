@@ -15,9 +15,9 @@ def errors_handler(func):
             date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
             new = {"error": str(sys.exc_info()[1]), "date": datetime.datetime.now()}
 
-            text = "**Hêllẞø† CRASH REPORT**\n\n"
+            text = "**ʀᴀᴅʜᴀʙᴏᴛ CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/ForGo10God)"
+            link = "[here](https://t.me/MissRadha)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -55,4 +55,4 @@ def errors_handler(func):
     return wrapper
 
 
-# hellbot
+# radhabot
