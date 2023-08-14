@@ -56,12 +56,12 @@ async def _(event):
     elif flag.lower() == "-grp":
         omk = "Groups"
         
-    text_to_send = f"**📍 Sent in :** `{owo} {omk}`\n**📍 Failed in :** `{sed} {omk}`\n**📍 Total :** `{UwU} {omk}`"
+    text_to_send = f"**✨ Sent in :** `{owo} {omk}`\n**📍 ꜰᴀɪʟᴇᴅ ɪɴ :** `{sed} {omk}`\n**📍 ᴛᴏᴛᴀʟ :** `{UwU} {omk}`"
     await hell.edit(f"**Gcast Executed Successfully !!** \n\n{text_to_send}")
     await event.client.send_message(Config.LOGGER_ID, f"#GCAST #{flag[1:].upper()} \n\n{text_to_send}")
 
 
-CmdHelp("gcast").add_command(
+CmdHelp("ɢᴄᴀꜱᴛ").add_command(
     "gcast", "<flag> <text/reply>", "Globally Broadcast the replied or given message based on flag given.", f"gcast -all Hello / {hl}gcast -grp Hello / {hl}gcast -pvt Hello"
 ).add_info(
     "Global Broadcast."
