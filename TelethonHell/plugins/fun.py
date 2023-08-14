@@ -241,7 +241,7 @@ async def claptext(memereview):
         await eor(memereview, reply_text)
 
 
-CmdHelp("fun").add_command(
+CmdHelp("ꜰᴜɴ").add_command(
     "insult", None, "Sends some random insulting lines"
 ).add_command(
     "piro", None, "Sends some random lines for 'piro' guys"
