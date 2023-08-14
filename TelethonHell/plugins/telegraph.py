@@ -91,26 +91,26 @@ async def _(event):
             end = datetime.datetime.now()
             ms = (end - start).seconds
             await hell.edit(
-                f"✓ **[Pasted to telegraph](https://te.legra.ph/{response['path']})** \n✓ **Time Taken:** `{ms}` secs\n✓** By:**  {hell_mention} \n✓  `https://te.legra.ph/{response['path']}`",
+                f"✓ **[ᴩᴀꜱᴛᴇᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴩʜ](https://te.legra.ph/{response['path']})** \n✓ **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{ms}` secs\n✓** ʙy:**  {hell_mention} \n✓  `https://te.legra.ph/{response['path']}`",
                 link_preview=True,
             )
     else:
-        await eod(hell, "Reply to a message to get a permanent telegra.ph link.")
+        await eod(hell, "ʀᴇᴩʟy ᴛᴏ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ɢᴇᴛ ᴀ ᴩᴇʀᴍᴀɴᴇɴᴛ ᴛᴇʟᴇɢʀᴀ.ᴩʜ ʟɪɴᴋ.")
 
 
 @hell_cmd(pattern="tgraph(?:\s|$)([\s\S]*)")
 async def _(event):
-    hell = await eor(event, "Making telegraph post ...")
+    hell = await eor(event, "ᴍᴀᴋɪɴɢ ᴛᴇʟᴇɢʀᴀᴩʜ ᴩᴏꜱᴛ ...")
     reply = await event.get_reply_message()
     lists = event.text.split(" ", 1)
     if not reply:
-        return await parse_error(event, "Nothing given to paste on telegraph.")
+        return await parse_error(event, "ɴᴏᴛʜɪɴɢ ɢɪᴠᴇɴ ᴛᴏ ᴩᴀꜱᴛᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴩʜ.")
     if not len(lists) == 2:
-        return await parse_error(event, "Give a title for the telegraph page!")
+        return await parse_error(event, "ɢɪᴠᴇ ᴀ ᴛɪᴛʟᴇ ꜰᴏʀ ᴛʜᴇ ᴛᴇʟᴇɢʀᴀᴩʜ ᴩᴀɢᴇ!")
     query = lists[1].split("|", 2)
     title = None
-    auth = "[ †he Hêllẞø† ]"
-    url = "https://t.me/its_hellbot"
+    auth = "[ ʀᴀᴅʜᴀᴜꜱᴇʀ ʙᴏᴛ ]"
+    url = "https://t.me/RadhaX2Support"
     content = reply.message
     if len(query) == 3:
         title = query[0].strip()
@@ -119,7 +119,7 @@ async def _(event):
     else:
         title = query[0].strip()
     link = await telegraph_paste(title, content, auth, url)
-    await hell.edit(f"**Created telegraph post!** \n\n__◈ Title:__ `{title}` \n__◈ Author:__ [{auth}]({url}) \n__◈ Link:__ {link}", link_preview=False)
+    await hell.edit(f"**ᴄʀᴇᴀᴛᴇᴅ ᴛᴇʟᴇɢʀᴀᴩʜ ᴩᴏꜱᴛ!** \n\n__◈ Title:__ `{title}` \n__◈ ᴀᴜᴛʜᴏʀ:__ [{auth}]({url}) \n__◈ Link:__ {link}", link_preview=False)
 
 
 CmdHelp("ᴛᴇʟᴇɢʀᴀᴩʜ").add_command(
