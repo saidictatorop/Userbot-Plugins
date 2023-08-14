@@ -44,13 +44,13 @@ async def download(event):
                             await event.client.send_file(
                                 event.chat_id, 
                                 single,
-                                caption=f"📥 InstaGram Post Downloaded By :- {hell_mention}",
+                                caption=f"📥 ɪɴꜱᴛᴀɢʀᴀᴍ ᴩᴏꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙy :- {hell_mention}",
                             )
                             count += 1
                         except Exception as e:
                             LOGS.info(str(e))
                         os.remove(single)
-                await hell.edit(f"**Downloaded top posts of** `{link}` \n\n__Total:__ `{count} posts.`")
+                await hell.edit(f"**ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ᴛᴏᴩ ᴩᴏꜱᴛꜱ ᴏꜰ** `{link}` \n\n__ᴛᴏᴛᴀʟ:__ `{count} ᴩᴏꜱᴛꜱ.`")
             except Exception as e:
                 return await parse_error(hell, e)
         else:
@@ -58,7 +58,7 @@ async def download(event):
     elif link:
         result = re.search(insta_regex, link)
         if not result:
-            return await parse_error(hell, "No link to download.")
+            return await parse_error(hell, "ɴᴏ ʟɪɴᴋ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ.")
         try:
             file, caption = await IGDL(event, result.group(0))
         except Exception as e:
@@ -72,7 +72,7 @@ async def download(event):
                     await event.client.send_file(
                         event.chat_id,
                         single,
-                        caption=f"📥 InstaGram Post Downloaded By :- {hell_mention}",
+                        caption=f"📥 ɪɴꜱᴛᴀɢʀᴀᴍ ᴩᴏꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙy :- {hell_mention}",
                     )
                     count += 1
                 except Exception as e:
@@ -84,20 +84,20 @@ async def download(event):
                     message=caption,
                     reply_to=hell,
                 )
-            await hell.edit(f"**Downloaded Instagram Post!** \n\n__Total:__ `{count} posts.`")
+            await hell.edit(f"**ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ɪɴꜱᴛᴀɢʀᴀᴍ ᴩᴏꜱᴛ!** \n\n__ᴛᴏᴛᴀʟ:__ `{count} ᴩᴏꜱᴛꜱ.`")
         else:
-            await parse_error(hell, "Unable to upload video! Check LOGS and try again!")
+            await parse_error(hell, "ᴜɴᴀʙʟᴇ ᴛᴏ ᴜᴩʟᴏᴀᴅ ᴠɪᴅᴇᴏ! ᴄʜᴇᴄᴋ ʟᴏɢꜱ ᴀɴᴅ ᴛʀy ᴀɢᴀɪɴ!")
     else:
-        await parse_error(hell, "Give proper command.")
+        await parse_error(hell, "ɢɪᴠᴇ ᴩʀᴏᴩᴇʀ ᴄᴏᴍᴍᴀɴᴅ.")
 
 
 @hell_cmd(pattern="igup(?:\s|$)([\s\S]*)")
 async def upload(event):
     flag, url = await get_flag(event)
-    hell = await eor(event, "IG uploader in action...")
+    hell = await eor(event, "ɪɢ ᴜᴩʟᴏᴀᴅᴇʀ ɪɴ ᴀᴄᴛɪᴏɴ...")
     reply = await event.get_reply_message()
     caption = f"{reply.message} \n\n" if reply.message else ""
-    caption += "• #UploadedByHellBot"
+    caption += "• #UploadedByRadhaBot"
     HELL_MEDIA = media_type(reply)
 
     try:
@@ -106,21 +106,21 @@ async def upload(event):
         return await parse_error(hell, e)
 
     if not reply:
-        return await eod(hell, "Reply to a media to upload on instagram.")
+        return await eod(hell, "ʀᴇᴩʟy ᴛᴏ ᴀ ᴍᴇᴅɪᴀ ᴛᴏ ᴜᴩʟᴏᴀᴅ ᴏɴ ɪɴꜱᴛᴀɢʀᴀᴍ.")
     if not reply.media:
-        return await eod(hell, "Reply to a media to upload on instagram.")
+        return await eod(hell, "ʀᴇᴩʟy ᴛᴏ ᴀ ᴍᴇᴅɪᴀ ᴛᴏ ᴜᴩʟᴏᴀᴅ ᴏɴ ɪɴꜱᴛᴀɢʀᴀᴍ.")
 
     if flag.lower() == "-reel":
         if HELL_MEDIA not in ["Gif", "Video"]:
-            return await eod(hell, "A reel can only be GIF or Video!")
+            return await eod(hell, "ᴀ ʀᴇᴇʟ ᴄᴀɴ ᴏɴʟy ʙᴇ ɢɪꜰ ᴏʀ ᴠɪᴅᴇᴏ!")
         file = await event.client.download_media(reply)
-        await hell.edit("**Downloaded!** \n\nNow uploading reel to instagram...")
+        await hell.edit("**ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ!** \n\nɴᴏᴡ ᴜᴩʟᴏᴀᴅɪɴɢ ʀᴇᴇʟ ᴛᴏ ɪɴꜱᴛᴀɢʀᴀᴍ...")
         try:
             video = IG.clip_upload(path=file, caption=caption)
         except Exception as e:
             os.remove(file)
             return await parse_error(hell, e)
-        await hell.edit(f"**Uploaded Reel to Instagram!** \n\n[See Post From Here](https://instagram.com/p/{video.code})", link_preview=False)
+        await hell.edit(f"**ᴜᴩʟᴏᴀᴅᴇᴅ ʀᴇᴇʟ ᴛᴏ ɪɴꜱᴛᴀɢʀᴀᴍ!** \n\n[ꜱᴇᴇ ᴩᴏꜱᴛ ꜰʀᴏᴍ ʜᴇʀᴇ](https://instagram.com/p/{video.code})", link_preview=False)
         os.remove(file)
     
     elif flag.lower() == "-tv":
@@ -260,7 +260,7 @@ async def userinfo(event):
         await parse_error(hell, "`INSTAGRAM_SESSION` __not configured or Expired !__", False)
 
 
-CmdHelp("instagram").add_command(
+CmdHelp("ɪɴꜱᴛᴀɢʀᴀᴍ").add_command(
     "igdl", "<link>", "Download posts/reels/stories from Instagram. Requires INSTAGRAM_SESSION to work."
 ).add_command(
     "igdl -htag", "<hashtag> <count>", "Download top posts of given instagram hashtag limited to given count. Requires INSTAGRAM_SESSION to work."
