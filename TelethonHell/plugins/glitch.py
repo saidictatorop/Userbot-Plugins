@@ -84,7 +84,7 @@ async def glitch_(event):
             os.remove(files)
 
 
-CmdHelp("glitch").add_command(
+CmdHelp("ɢʟɪᴛᴄʜ").add_command(
     "glitch", "1 to 8", "Glitches the replied gif/sticker/pic/video.", "glitch 5 <reply_to_a_media>"
 ).add_info(
     "Glitcher"
