@@ -59,7 +59,7 @@ async def wallpaper(event):
         os.remove(i)
 
 
-CmdHelp("image").add_command(
+CmdHelp("ɪᴍᴀɢᴇ").add_command(
     "img", "<text>;<limit>", "Searches for images on google and sends the images.", "img car;5"
 ).add_command(
     "wallpaper", "<text>;<limit>", "Searches for wallpapers on unsplash and sends the wallpapers.", "wallpaper car;5"
