@@ -95,7 +95,7 @@ async def _(hellevent):
 #             return await parse_error(hell, "__Unblock @Sangmatainfo_bot and try again.__", False)
 
 
-CmdHelp("history").add_command(
+CmdHelp("ʜɪꜱᴛᴏʀy").add_command(
     "history", "<reply to a user>", "Fetches the name history of replied user."
 # ).add_command(
 #     "unh", "<reply to user>", "Fetches the Username History of replied users."
