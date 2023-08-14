@@ -6,8 +6,8 @@ from TelethonHell.plugins import *
 
 
 msg = f"""
-**Rᴀᴅʜᴀ Usᴇʀʙᴏᴛ**
-  •        [Rᴇᴘᴏ ⚡](https://t.me/RadhaX2Support)
+**ʟᴇɢᴇɴᴅᴀʀy ᴀꜰ ʀᴀᴅʜᴀʙᴏᴛ**
+  •        [Rᴇᴘᴏ ⚡](https://github.com/Radhak8/RadhaXUserbot)
   •        [Uᴘᴅᴀᴛᴇs ✨](https://t.me/RadhaX2Update)
   •  ©️ {hell_channel} ™
 """
