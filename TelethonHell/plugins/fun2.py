@@ -260,7 +260,7 @@ async def hmm(hell):
     await eor(hell, facthell)
 
 
-CmdHelp("fun2").add_command(
+CmdHelp("ꜰᴜɴ2").add_command(
     "join", None, "Use and see"
 ).add_command(
     "bf", None, "Use and see"
