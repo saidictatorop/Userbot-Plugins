@@ -80,8 +80,8 @@ async def _(event):
     else:
         await parse_error(hell, f"No user defined.")
 
-    text_to_send = f"📍 <b>Promoted:</b> <a href='tg://user?id={user.id}'>{user.first_name}</a> \n📍 <b>Success:</b> <code>{yup}</code> \n📍 <b>Failed:</b> <code>{sed}</code>"
-    await hell.edit(f"<b><i>🔥 GPromote Completed !!</b></i> \n\n{text_to_send}", parse_mode="HTML")
+    text_to_send = f"📍 <b>ᴩʀᴏᴍᴏᴛᴇᴅ:</b> <a href='tg://user?id={user.id}'>{user.first_name}</a> \n📍 <b>ꜱᴜᴄᴄᴇꜱꜱ:</b> <code>{yup}</code> \n📍 <b>ꜰᴀɪʟᴇᴅ:</b> <code>{sed}</code>"
+    await hell.edit(f"<b><i>🔥 ɢᴩʀᴏᴍᴏᴛᴇ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ʙᴀʙy !!</b></i> \n\n{text_to_send}", parse_mode="HTML")
     await event.client.send_message(
         Config.LOGGER_ID,
         f"#GPROMOTE \n\n{text_to_send}",
@@ -128,8 +128,8 @@ async def _(event):
     else:
         await parse_error(hell, f"No user defined.")
 
-    text_to_send = f"📍 <b>Demoted:</b> <a href='tg://user?id={user.id}'>{user.first_name}</a> \n📍 <b>Success:</b> <code>{yup}</code> \n📍 <b>Failed:</b> <code>{sed}</code>"
-    await hell.edit(f"<b><i>🔥 GDemote Completed !!</b></i> \n\n{text_to_send}", parse_mode="HTML")
+    text_to_send = f"📍 <b>ᴅᴇᴍᴏᴛᴇᴅ:</b> <a href='tg://user?id={user.id}'>{user.first_name}</a> \n📍 <b>ꜱᴜᴄᴄᴇꜱꜱ:</b> <code>{yup}</code> \n📍 <b>ꜰᴀɪʟᴇᴅ:</b> <code>{sed}</code>"
+    await hell.edit(f"<b><i>🌝 ɢᴅᴇᴍᴏᴛᴇ ᴄᴏᴍᴩʟᴇᴛᴇ ʙᴀʙy !!</b></i> \n\n{text_to_send}", parse_mode="HTML")
     await event.client.send_message(
         Config.LOGGER_ID,
         f"#GDEMOTE \n\n{text_to_send}",
@@ -196,9 +196,9 @@ async def _(event):
     else:
         gbpic = cjb
     
-    gmsg = f"🥴 [{name}](tg://user?id={userid}) **beta majdur ko khodna 😪 aur** {hell_mention} **ko chodna... Kabhi sikhana nhi!! 😏**\n\n📍 Added to Gban Watch!!\n**🔰 Total Chats :**  `{chats}`"
+    gmsg = f"🥴 [{name}](tg://user?id={userid}) **ʙᴇᴛᴀ ᴍᴀᴊᴅᴜʀ ᴋᴏ ᴋʜᴏᴅɴᴀ 😪 ᴀᴜʀ** {hell_mention} **ᴋᴏ ᴄʜᴏᴅɴᴀ... ᴋᴀʙʜɪ ꜱɪᴋʜᴀɴᴀ ɴʜɪ!! 😏**\n\n📍 ᴀᴅᴅᴇᴅ ᴛᴏ ɢʙᴀɴ ᴡᴀᴛᴄʜ!!\n**⚡ ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ :**  `{chats}`"
     if reason != "":
-        gmsg += f"\n**🔰 Reason :**  `{reason}`"
+        gmsg += f"\n**👉 ʀᴇᴀꜱᴏɴ :**  `{reason}`"
     
     ogmsg = f"**📍 Victim:** [{name}](tg://user?id={userid}) \n**📍 Chats:** `{chats}` \n**📍 Gban By:** {hell_mention}\n\n**📍 User Added to Gban Watch!!**"
     if reason != "":
