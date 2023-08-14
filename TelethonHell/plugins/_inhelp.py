@@ -135,7 +135,7 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     PIC,
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="RadhaBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -181,7 +181,7 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     file=PIC,
                     text=HELL_FIRST,
-                    title="Hellbot PM Permit",
+                    title="Radhabot PM Permit",
                     buttons=[
                         [Button.inline("✨ Rᴇǫᴜᴇsᴛ Approval", data="req")],
                         [Button.inline("🌝 Bʟᴏᴄᴋ", data="heheboi")],
@@ -192,7 +192,7 @@ if Config.BOT_USERNAME and tbot:
             else:
                 result = builder.article(
                     text=HELL_FIRST,
-                    title="Hellbot PM Permit",
+                    title="Radhabot PM Permit",
                     buttons=[
                         [Button.inline("✨ Rᴇǫᴜᴇsᴛ Approval", data="req")],
                         [Button.inline("🌝 Bʟᴏᴄᴋ", data="heheboi")],
@@ -206,7 +206,7 @@ if Config.BOT_USERNAME and tbot:
                 title="Repository",
                 text=f"**ʀᴀᴅʜᴀ ᴜꜱᴇʀʙᴏᴛ ✨**",
                 buttons=[
-                    [Button.url("Rᴇᴘᴏ ⚡", "https://t.me/RadhaX2Support")],
+                    [Button.url("Rᴇᴘᴏ ⚡", "https://github.com/Radhak8/RadhaXUserbot")],
                     [Button.url("Uᴘᴅᴀᴛᴇs", "https://t.me/RadhaX2Update")],
                 ],
             )
