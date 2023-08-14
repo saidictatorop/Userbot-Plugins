@@ -77,7 +77,7 @@ async def kang(event):
             is_vid = True
             photo = 1
         else:
-            return await eod(hell, "__Can't kang that 🔪__")
+            return await eod(hell, "__Can't kang that babiie 🔪__")
     else:
         return await eod(hell, "__Can't kang that 🔪__")
     await hell.edit("__**Adding this sticker to your pack...**__")
@@ -122,7 +122,7 @@ async def kang(event):
                         Sticker.pack += 1
                     except ValueError:
                         Sticker.pack = 1
-                    packname = f"HellBot_{name}_{Sticker.pack}"
+                    packname = f"RadhaBot_{name}_{Sticker.pack}"
                     packnick = f"{custompack}" if custompack else f"{nick}'s ʀᴀᴅʜᴀʙᴏᴛ Vol.{Sticker.pack}"
                     await hell.edit(f"__**Switching pack due to insufficient space ...**__ \n__Pack:__ `{Sticker.pack}`")
                     await conv.send_message(packname)
