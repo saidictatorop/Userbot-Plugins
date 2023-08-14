@@ -200,14 +200,14 @@ async def _(event):
     if reason != "":
         gmsg += f"\n**👉 ʀᴇᴀꜱᴏɴ :**  `{reason}`"
     
-    ogmsg = f"**📍 Victim:** [{name}](tg://user?id={userid}) \n**📍 Chats:** `{chats}` \n**📍 Gban By:** {hell_mention}\n\n**📍 User Added to Gban Watch!!**"
+    ogmsg = f"**📍 ᴠɪᴄᴛɪᴍ:** [{name}](tg://user?id={userid}) \n**📍 ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ:** `{chats}` \n**🌝 ɢʙᴀɴ ʙy:** {hell_mention}\n\n**⚡ ᴜꜱᴇʀ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʙᴀɴ ᴡᴀᴛᴄʜ!!**"
     if reason != "":
         ogmsg += f"\n**📍 Reason:** `{reason}`"
     
     if Config.ABUSE == "ON":
         await event.client.send_message(event.chat_id, gmsg, file=gbpic, reply_to=reply)
     else:
-        await event.client.send_message(event.chat_id, f"__**🔥 GBan Completed !!**__ \n\n{ogmsg}", file=gbpic, reply_to=reply)
+        await event.client.send_message(event.chat_id, f"__**🔥 ɢʙᴀɴ ᴄᴏᴍᴩʟᴇᴛᴇᴅ !!**__ \n\n{ogmsg}", file=gbpic, reply_to=reply)
     await hell.delete()
     await event.client.send_message(
         Config.LOGGER_ID,
@@ -218,7 +218,7 @@ async def _(event):
 @hell_cmd(pattern="ungban(?:\s|$)([\s\S]*)")
 async def _(event):
     _, _, hell_mention = await client_id(event)
-    hell = await eor(event, "`Ungban in action...`")
+    hell = await eor(event, "`ᴜɴɢʙᴀɴ ɪɴ ᴀᴄᴛɪᴏɴ...`")
     if event.reply_to_msg_id:
         userid = (await event.get_reply_message()).sender_id
     elif event.pattern_match.group(1):
@@ -226,11 +226,11 @@ async def _(event):
     elif event.is_private:
         userid = (await event.get_chat()).id
     else:
-        return await parse_error(hell, "No user mentioned.")
+        return await parse_error(hell, "ɴᴏ ᴜꜱᴇʀ ᴍᴇɴᴛɪᴏɴᴇᴅ.")
     name = (await event.client.get_entity(userid)).first_name
     chats = 0
     if not is_gbanned(userid):
-        return await eod(hell, "`User is not gbanned.`")
+        return await eod(hell, "`ᴜꜱᴇʀ ɪꜱ ɴᴏᴛ ɢʙᴀɴɴᴇᴅ ʙʀᴜʜ.`")
     
     async for gfuck in event.client.iter_dialogs():
         if gfuck.is_group or gfuck.is_channel:
@@ -243,8 +243,8 @@ async def _(event):
                 pass
 
     ungbaner(userid)
-    ogmsg = f"**📍 Victim:** [{name}](tg://user?id={userid}) \n**📍 Chats:** `{chats}` \n**📍 UnGban By:** {hell_mention}\n\n**📍 User removed from Gban Watch!!**"
-    await hell.edit(f"__**🔥 UnGban Completed !!**__ \n\n{ogmsg}")
+    ogmsg = f"**📍 ᴠɪᴄᴛɪᴍ:** [{name}](tg://user?id={userid}) \n**📍 ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ:** `{chats}` \n**✨ ᴜɴɢʙᴀɴ ʙy:** {hell_mention}\n\n**📍 User removed from Gban Watch!!**"
+    await hell.edit(f"__**😙 ᴜɴɢʙᴀɴ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ʙᴀʙy !!**__ \n\n{ogmsg}")
     await event.client.send_message(
         Config.LOGGER_ID,
         f"#UNGBAN \n\n{ogmsg}",
@@ -253,9 +253,9 @@ async def _(event):
 
 @hell_cmd(pattern="listgban$")
 async def already(event):
-    hell = await eor(event, "`Fetching Gbanned users...`")
+    hell = await eor(event, "`ꜰᴇᴛᴄʜɪɴɢ ɢʙᴀɴɴᴇᴅ ᴜꜱᴇʀꜱ...`")
     gbanned_users = all_gbanned()
-    GBANNED_LIST = "**Gbanned Users:**\n"
+    GBANNED_LIST = "**ɢʙᴀɴɴᴇᴅ ᴜꜱᴇʀꜱ:**\n"
     if len(gbanned_users) > 0:
         for user in gbanned_users:
             usr = user.chat_id
@@ -275,7 +275,7 @@ async def _(event):
     if event.user_joined or event.added_by:
         user = await event.get_user()
         chat = await event.get_chat()
-        gban_watcher = f"⚠️⚠️**Warning**⚠️⚠️\n\n`Gbanned User Joined the chat!!`\n**⚜️ Victim:**  [{user.first_name}](tg://user?id={user.id})\n"
+        gban_watcher = f"⚠️⚠️**ᴡᴀʀɴɪɴɢ**⚠️⚠️\n\n`Gbanned User Joined the chat!!`\n**⚜️ Victim:**  [{user.first_name}](tg://user?id={user.id})\n"
         if is_gbanned(str(user.id)):
             if chat.admin_rights:
                 try:
