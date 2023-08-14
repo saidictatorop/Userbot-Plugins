@@ -556,13 +556,13 @@ async def _(event):
         if r_msg.media:
             bot_api_file_id = pack_bot_file_id(r_msg.media)
             await hell.edit(
-                "🔸 **Current Chat ID:** `{}`\n\n🔰 **From User ID:** `{}`\n\n🤖 **Bot API File ID:** `{}`".format(
+                "🔸 **Current Chat ID:** `{}`\n\n✨ **From User ID:** `{}`\n\n🤖 **Bot API File ID:** `{}`".format(
                     str(event.chat_id), str(r_msg.sender_id), bot_api_file_id
                 )
             )
         else:
             await hell.edit(
-                "🔸 **Current Chat ID:** `{}`\n\n🔰 **From User ID:** `{}`".format(
+                "✨ **Current Chat ID:** `{}`\n\n👉 **From User ID:** `{}`".format(
                     str(event.chat_id), str(r_msg.sender_id)
                 )
             )
