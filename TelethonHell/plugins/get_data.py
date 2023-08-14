@@ -36,7 +36,7 @@ async def _(event):
         await eor(event, "`{}`".format(the_real_message))
 
 
-CmdHelp("get_data").add_command(
+CmdHelp("ɢᴇᴛ_ᴅᴀᴛᴀ").add_command(
     "yaml", "<reply>", "Gives out Data of replied msg."
 ).add_command(
     "json", "<reply>", "Gets the json data of the replied msg/media from a user/bot/channel"
