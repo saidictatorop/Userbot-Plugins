@@ -53,7 +53,7 @@ async def _(event):
     if not suu and not reply:
         return await parse_error(hell, "ɴᴏ ᴜꜱᴇʀ ᴍᴇɴᴛɪᴏɴᴅ ᴛᴏ ʀᴇᴍᴏᴠᴇ ꜰʀᴏᴍ ꜱᴜᴅᴏ.")
     if suu and not suu.isnumeric():
-        return await parse_error(hell, "Only user id is supported.")
+        return await parse_error(hell, "ᴏɴʟy ᴜꜱᴇʀ ɪᴅ ɪꜱ ꜱᴜᴩᴩᴏʀᴛᴇᴅ.")
     user = await get_user(event) if reply else suu
     user = str(user)
     if gvarstat("SUDO_USERS"):
@@ -67,12 +67,12 @@ async def _(event):
             addgvar("SUDO_USERS", final)
             await eod(
                 hell,
-                f"❌** Removed**  `{str(user)}`  **from Sudo User.**\n\n__Reload your bot to apply changes. Do__ `{hl}reload`",
+                f"❌** ʀᴇᴍᴏᴠᴇᴅ**  `{str(user)}`  **ꜰʀᴏᴍ ꜱᴜᴅᴏ ᴜꜱᴇʀ.**\n\n__ʀᴇʟᴏᴀᴅ yᴏᴜʀ ʙᴏᴛ ᴛᴏ ᴀᴩᴩʟy ᴄʜᴀɴɢᴇꜱ. Do__ `{hl}reload`",
             )
         else:
-            return await eod(hell, "This user is not in your sudo users list.")
+            return await eod(hell, "ᴛʜɪꜱ ᴜꜱᴇʀ ɪꜱ ɴᴏᴛ ɪɴ yᴏᴜʀ ꜱᴜᴅᴏ ᴜꜱᴇʀꜱ ʟɪꜱᴛ.")
     else:
-        await eod(hell, "**Sudo Is Disabled !!**")
+        await eod(hell, "**ꜱᴜᴅᴏ ɪꜱ ᴅɪꜱᴀʙʟᴇᴅ !!**")
 
 
 async def get_user(event):
