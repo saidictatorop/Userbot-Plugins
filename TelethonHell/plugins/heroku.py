@@ -210,7 +210,7 @@ def prettyjson(obj, indent=2, maxlinelength=80):
 
 
 
-CmdHelp("heroku").add_command(
+CmdHelp("ʜᴇʀᴏᴋᴜ").add_command(
     "usage", None, "Check your heroku dyno hours status."
 ).add_command(
     "set var", "<Var Name> <value>", "Add new variable or update existing value/variable\nAfter setting a variable bot will restart so stay calm for 1 minute."
