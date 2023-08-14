@@ -213,7 +213,7 @@ if Config.BOT_USERNAME and tbot:
 
         else:
             result = builder.article(
-                "@Its_HellBot",
+                "@RadhaX2Update",
                 text="""**Hey! This is [ʀᴀᴅʜᴀ ᴜꜱᴇʀʙᴏᴛ](https://t.me/RadhaX2Update) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
