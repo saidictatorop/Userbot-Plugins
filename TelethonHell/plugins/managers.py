@@ -46,7 +46,7 @@ async def _(event):
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )
-    OUTPUT = f"**Files in Hêllẞø† DOWNLOADS Folder:**\n"
+    OUTPUT = f"**Files in ʀᴀᴅʜᴀʙᴏᴛ DOWNLOADS Folder:**\n"
     stdout, stderr = await process.communicate()
     if len(stdout) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(stdout)) as out_file:
@@ -227,9 +227,9 @@ async def handler(event):
 CmdHelp("managers").add_command(
     "ls_local", None, "Gives the list of downloaded medias in your hellbot server."
 ).add_command(
-    "ls_root", None, "Gives the list of all files in root directory of Hellbot repo."
+    "ls_root", None, "Gives the list of all files in root directory of RadhaBot repo."
 ).add_command(
-    "ls_saved", None, "Gives the list of all files in Saved directory of your hellbot server"
+    "ls_saved", None, "Gives the list of all files in Saved directory of your RadhaBot server"
 ).add_command(
     "rnsaved", "from | to", "Renames the file in saved directory"
 ).add_command(
