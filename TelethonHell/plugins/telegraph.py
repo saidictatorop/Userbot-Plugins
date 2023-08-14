@@ -25,7 +25,7 @@ async def _(event):
     optional_title = None
     if len(lists) == 2:
         optional_title = lists[1].strip()
-    hell = await eor(event, "Making Telegraph Link....")
+    hell = await eor(event, "ᴩʀᴏᴄᴇꜱꜱɪɴɢ....")
     _, _, hell_mention = await client_id(event)
     reply = await event.get_reply_message()
     if reply:
@@ -38,7 +38,7 @@ async def _(event):
             end = datetime.datetime.now()
             ms = (end - start).seconds
             await hell.edit(
-                f"Downloaded to  `{downloaded_file_name}`  in  `{ms}`  seconds. \nMaking Telegraph Link....."
+                f"ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ᴛᴏ  `{downloaded_file_name}`  ɪɴ  `{ms}`  ꜱᴇᴄᴏɴᴅꜱ. \nᴍᴀᴋɪɴɢ ᴛᴇʟᴇɢʀᴀᴩʜ ʟɪɴᴋ....."
             )
             if downloaded_file_name.endswith((".webp")):
                 resize_image(downloaded_file_name)
@@ -53,7 +53,7 @@ async def _(event):
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
                 await hell.edit(
-                    "✓ **[File uploaded to telegraph](https://te.legra.ph{})** \n✓ **Time Taken:** `{}` secs \n✓ **By: {}** \n✓  `https://te.legra.ph{}`".format(
+                    "✓ **[ꜰɪʟᴇ ᴜᴩʟᴏᴀᴅᴇᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴩʜ](https://te.legra.ph{})** \n✓ **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{}` secs \n✓ **By: {}** \n✓  `https://te.legra.ph{}`".format(
                         media_urls[0],
                         (ms + ms_two),
                         hell_mention,
