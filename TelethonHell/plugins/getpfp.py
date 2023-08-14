@@ -170,7 +170,7 @@ async def potocmd(event):
     await hell.delete()
 
 
-CmdHelp("getpfp").add_command(
+CmdHelp("ɢᴇᴛᴩꜰᴩ").add_command(
     "poto", "<all> / <desired pfp number>", f"Reply to user to get his/her profile pic. Use {hl}poto <number> to get desired profile pic else use {hl}poto all to get all profile pic(s). If you dont reply to a user then it gets group pics."
 ).add_command(
     "getpic", "<reply> <username>", "Gets the user's 1st profile pic. But this time with a caption. Try it yourself..."
