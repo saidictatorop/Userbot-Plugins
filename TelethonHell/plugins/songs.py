@@ -36,7 +36,7 @@ async def songs(event):
     except Exception as e:
         return await parse_error(hell, f"__No song found. Maybe give different name or check spelling.__ \n`{str(e)}`", False)
     try:
-        upload_text = f"**••• Uploading Song •••** \n\n__» {title}__\n__»» {channel}__"
+        upload_text = f"**••• ᴜᴩʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ •••** \n\n__» {title}__\n__»» {channel}__"
         with yt_dlp.YoutubeDL(song_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
@@ -47,7 +47,7 @@ async def songs(event):
             event.chat_id,
             f"{audio_file}.mp3",
             supports_streaming=True,
-            caption=f"**✘ Song -** [{title}]({link}) \n**✘ Views -** `{views}` \n**✘ Duration -** `{duration}` \n\n**« ✘ »** {hell_mention}",
+            caption=f"**✘ ꜱᴏɴɢ -** [{title}]({link}) \n**✘ ᴠɪᴇᴡꜱ -** `{views}` \n**✘ ᴅᴜʀᴀᴛɪᴏɴ -** `{duration}` \n\n**« ✘ »** {hell_mention}",
             thumb=thumb_name,
             reply_to=reply,
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
@@ -107,7 +107,7 @@ async def vsong(event):
             event.chat_id,
             open(file_, "rb"),
             supports_streaming=True,
-            caption=f"**✘ Video -** [{title}]({link}) \n**✘ Views -** `{views}` \n**✘ Duration -** `{duration}` \n\n**« ✘ »** {hell_mention}",
+            caption=f"**✘ ᴠɪᴅᴇᴏ -** [{title}]({link}) \n**✘ ᴠɪᴇᴡꜱ -** `{views}` \n**✘ ᴅᴜʀᴀᴛɪᴏɴ -** `{duration}` \n\n**« ✘ »** {hell_mention}",
             thumb=thumb_name,
             reply_to=reply,
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
@@ -149,7 +149,7 @@ async def lyrics(event):
         lyrics = result['lyrics']
         final = f"<b><i>• Song:</b></i> <code>{title}</code> \n<b><i>• Lyrics:</b></i> \n<code>{lyrics}</code>"
         if len(final) >= 4095:
-            to_paste = f"<img src='{image}'/> \n{final} \n<img src='https://te.legra.ph/file/2c546060b20dfd7c1ff2d.jpg'/>"
+            to_paste = f"<img src='{image}'/> \n{final} \n<img src='https://te.legra.ph/file/63399fd0faf7ac8569f48.jpg'/>"
             link = await telegraph_paste(title, to_paste)
             await hell.edit(f"**Lyrics too big! Get it from here:** \n\n• [{title}]({link})", link_preview=False)
         else:
