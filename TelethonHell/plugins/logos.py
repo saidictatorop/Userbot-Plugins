@@ -9,12 +9,12 @@ from TelethonHell.plugins import *
 
 @hell_cmd(pattern="logo([\s\S]*)")
 async def logo(event):
-    hell = await eor(event, "`Processing.....`")
+    hell = await eor(event, "`ᴩʀᴏᴄᴇꜱꜱɪɴɢ.....`")
     _, _, hell_mention = await client_id(event)
     text = event.text
     lists = text.split(" ", 1)
     if len(lists) == 1:
-        return await parse_error(hell, "Give some text to make Logo")
+        return await parse_error(hell, "ɢɪᴠᴇ ꜱᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴍᴀᴋᴇ ʟᴏɢᴏ")
     if (text[5:]).startswith("-"):
         _type = (lists[0])[6:]
     else:
@@ -69,7 +69,7 @@ async def logo(event):
 
 
 CmdHelp("ʟᴏɢᴏꜱ").add_command(
-    "logo", "-{type} {logo text}", "Makes a logo with the given text. If replied to a picture makes logo on that else gets random BG.", f"logo Hellbot \n{hl}logo-car HellBot \n{hl}logo-anime RadhaBot \netc..."
+    "logo", "-{type} {logo text}", "Makes a logo with the given text. If replied to a picture makes logo on that else gets random BG.", f"logo Radhabot \n{hl}logo-car RadhaBot \n{hl}logo-anime RadhaBot \netc..."
 ).add_info(
     "Logo Maker."
 ).add_warning(
