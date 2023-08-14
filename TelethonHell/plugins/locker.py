@@ -179,7 +179,7 @@ async def _(event):
     )
 
 
-CmdHelp("locker").add_command(
+CmdHelp("ʟᴏᴄᴋᴇʀ").add_command(
     "lock", "<lock type>", "Locks the mentioned lock type in current chat. You can Get all lock type by using '.ltype'."
 ).add_command(
     "unlock", "<lock type>", "Unlocks the mentioned lock type in current chat. You can Get all lock types by using '.ltype'."
