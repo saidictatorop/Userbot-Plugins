@@ -108,7 +108,7 @@ async def _(event):
     await eod(event, "Added user to the chat..")
 
 
-CmdHelp("invite").add_command(
+CmdHelp("ɪɴᴠɪᴛᴇ").add_command(
     "add", "<username/id>", "Adds the given user to the group"
 ).add_command(
     "inviteall", "<group username>", "Scraps user from the targeted group to your group. Basically Kidnapps user from one chat to another"
