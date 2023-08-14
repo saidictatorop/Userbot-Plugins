@@ -211,7 +211,7 @@ async def font(event):
             await eod(hell, "Unsupported font!")
 
 
-CmdHelp("fonts").add_command(
+CmdHelp("ꜰᴏɴᴛꜱ").add_command(
     "font", "<font number>", "Changes the replied text to desired font.", "font 07"
 ).add_extra(
     "📌 Font Numbers", "01 to 23"
