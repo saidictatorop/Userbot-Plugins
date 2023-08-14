@@ -8,50 +8,50 @@ async def sudo(event):
     if Config.SUDO_USERS:
         if gvarstat("SUDO_USERS"):
             sudousers = gvarstat("SUDO_USERS")
-            await eor(event, f"📍 **Sudo:**  `Enabled`\n\n📝 **Sudo users:**  `{sudousers}`")
+            await eor(event, f"📍 **ꜱᴜᴅᴏ:**  `Enabled`\n\n📝 **ꜱᴜᴅᴏ ᴜꜱᴇʀꜱ:**  `{sudousers}`")
     else:
-        await eod(event, f"📍 **Sudo:**  `Disabled`")
+        await eod(event, f"📍 **ꜱᴜᴅᴏ:**  `Disabled`")
 
 
 @hell_cmd(pattern="addsudo(?:\s|$)([\s\S]*)")
 async def add(event):
     lists = event.text.split(" ", 1)
-    hell = await eor(event, "**🚀 Adding Sudo User...**")
+    hell = await eor(event, "**✨ ᴡᴀɪᴛ ʙᴀʙy ᴀᴅᴅɪɴɢ ꜱᴜᴅᴏ ᴜꜱᴇʀ...**")
     suu = None
     if len(lists) == 2:
         suu = lists[1].strip()
     reply = await event.get_reply_message()
     if not suu and not reply:
-        return await parse_error(hell, "No user mentioned to add in sudo.")
+        return await parse_error(hell, "ɴᴏ ᴜꜱᴇʀ ᴍᴇɴᴛɪᴏɴᴇᴅ ᴛᴏ ᴀᴅᴅ ɪɴ ꜱᴜᴅᴏ.")
     if suu and not suu.isnumeric():
-        return await parse_error(hell, "Only user id is supported.")
+        return await parse_error(hell, "ᴏɴʟy ᴜꜱᴇʀ ɪᴅ ɪꜱ ꜱᴜᴩᴩᴏʀᴛᴇᴅ.")
     user = await get_user(event) if reply else suu
     user = str(user)
     if gvarstat("SUDO_USERS"):
         exist = gvarstat("SUDO_USERS")
         int_list = await make_int(exist)
         if int(user) in int_list:
-            return await eod(hell, "User is already in sudo list")
+            return await eod(hell, "ᴜꜱᴇʀ ɪꜱ ᴀʟʀᴇᴀᴅy ɪɴ ꜱᴜᴅᴏ ʟɪꜱᴛ")
         final = f"{str(exist)} {str(user)}"
     else:
         final = user
     addgvar("SUDO_USERS", final)
     await eod(
         hell,
-        f"**Successfully Added New Sudo User.** \n\n__Reload your bot to apply changes. Do__ `{hl}reload`",
+        f"**ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟy ᴀᴅᴅᴇᴅ ɴᴇᴡ ꜱᴜᴅᴏ ᴜꜱᴇʀ.** \n\n__ʀᴇʟᴏᴀᴅ yᴏᴜʀ ʙᴏᴛ ᴛᴏ ᴀᴩᴩʟy ᴄʜᴀɴɢᴇꜱ. Do__ `{hl}reload`",
     )
 
 
 @hell_cmd(pattern="rmsudo(?:\s|$)([\s\S]*)")
 async def _(event):
     lists = event.text.split(" ", 1)
-    hell = await eor(event, "**🚫 Removing Sudo User...**")
+    hell = await eor(event, "**🚫 ʀᴇᴍᴏᴠɪɴɢ ꜱᴜᴅᴏ ᴜꜱᴇʀ...**")
     reply = await event.get_reply_message()
     suu = None
     if len(lists) == 2:
         suu = lists[1].strip()
     if not suu and not reply:
-        return await parse_error(hell, "No user mentiond to remove from sudo.")
+        return await parse_error(hell, "ɴᴏ ᴜꜱᴇʀ ᴍᴇɴᴛɪᴏɴᴅ ᴛᴏ ʀᴇᴍᴏᴠᴇ ꜰʀᴏᴍ ꜱᴜᴅᴏ.")
     if suu and not suu.isnumeric():
         return await parse_error(hell, "Only user id is supported.")
     user = await get_user(event) if reply else suu
